@@ -1,6 +1,7 @@
 # tparty
 
-Displays the TP of party members in the party list
+Displays the TP of party members in the party list.
+Loosely based on the addon of the same name for Windower 4 by Cliff.
 
 ## Settings
 - **party_y_offset**: The y offset for the whole party (and first member)
@@ -11,4 +12,4 @@ Displays the TP of party members in the party list
 - **stroke_color**: The text stroke color
 
 ## TODO
-- Possibly make use of right aligned text if/when Windower implements it
+- Possibly make use of right aligned text if/when Windower 5 implements it
