@@ -1,0 +1,9 @@
+<package>
+    <name>tparty</name>
+    <version>1.0</version>
+    <type>addon</type>
+    <dependencies>
+        <dependency>party</dependency>
+        <dependency>settings</dependency>
+    </dependencies>
+</package>
