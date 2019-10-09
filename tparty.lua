@@ -8,10 +8,10 @@ local defaults = {
     party = {
         x_right = 16,
         y_bottom = 16,
-        top_padding = 6,
-        total_y_padding = 14,
         width = 112,
         height_per_member = 20,
+        additional_height = 14,
+        top_padding = 6,
         tp_x = 6,
         tp_y = 9,
     },
@@ -43,9 +43,9 @@ ui.display(function()
     if party then
         local party_1_count = party.alliance.party_1_count
         tparty_party_window_state.x = windower.settings.ui_size.width - config.party.x_right - config.party.width
-        tparty_party_window_state.y = windower.settings.ui_size.height - config.party.y_bottom - (party_1_count * config.party.height_per_member) - config.party.total_y_padding
+        tparty_party_window_state.y = windower.settings.ui_size.height - config.party.y_bottom - (party_1_count * config.party.height_per_member) - config.party.additional_height
         tparty_party_window_state.width = config.party.width
-        tparty_party_window_state.height = (party_1_count * config.party.height_per_member) + config.party.total_y_padding
+        tparty_party_window_state.height = (party_1_count * config.party.height_per_member) + config.party.additional_height
 
         tparty_party_window_state = ui.window('tparty_party_window', tparty_party_window_state, function()
             for i=1, party_1_count do
