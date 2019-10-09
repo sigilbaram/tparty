@@ -1,6 +1,6 @@
 <package>
     <name>tparty</name>
-    <version>1.0</version>
+    <version>1.0.0.0</version>
     <type>addon</type>
     <dependencies>
         <dependency>party</dependency>
